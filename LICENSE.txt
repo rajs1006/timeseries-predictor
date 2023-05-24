@@ -1,0 +1,23 @@
+Copyright © 2020 Resonanz Energy RE GmbH, Berlin - Germany
+
+Permission to use the source code, the executable program and associated
+documentation files (the "Software") is exclusively granted to organizations and
+their respective employees (the "Organization") which have signed a legally
+binding contract (the "Contract") with Resonanz Energy RE GmbH, explicitly
+granting a simple right of use for the Software. The Software must under no
+circumstances be shared with anyone outside the Organization (including
+affiliated organizations) without written consent from Resonanz Energy RE GmbH
+unless stated in the Contract or a similar legally binding written agreement.
+Modifications and extensions of the Software can be made by Resonanz Energy RE
+GmbH at all times as per the Contract.
+
+Die Erlaubnis zur Nutzung des Quellcodes, des ausführbaren Programms und der
+dazugehörigen Dokumente (die "Software") wird ausschließlich Unternehmen und
+deren Mitarbeitern (das "Unternehmen") erteilt, die einen rechtlich bindenden
+Vertrag (der "Vertrag") mit Resonanz Energy RE GmbH abgeschlossen haben, der dem
+Unternehmen ein einfaches Nutzungsrecht gewährt. Die Software darf unter keinen
+Umständen an Drittparteien (auch nicht an verbundene Unternehmen) weitergegeben
+werden ohne das schriftliche Einverständnis der Resonanz Energy RE GmbH im
+Vertrag oder ähnlichen rechtlich bindenden Dokumenten. Änderungen und
+Erweiterungen der Software durch die Resonanz Energy RE GmbH sind jederzeit
+gemäß des Vertrages zulässig. 

@@ -1,0 +1,101 @@
+
+GAS:
+    common:
+        key             :                           ExternalControlEnergy
+        KILO_WATT       :                           'KWh'
+        MEGA_WATT       :                           'MWh'
+
+    validate:
+        indexColumn     :                           DayOfUse
+        quantityColumn  :                           DailyQuantity
+
+        productColumn   :                           ProductType
+        excludedProduct :                           Hour
+
+        directionColumn :                           DirectionOfFlow
+        buyDirectionVal :                           ['b', 'B']
+        sellDirectionVal:                           ['s', 'S']
+
+        gasColumn       :                           Gas
+        hGas            :                           H-Gas
+        lGas            :                           L-Gas
+
+        energyUnit      :                           MWh
+
+        buyHBalancingDataName:                          buyHBalancingData
+        buyLBalancingDataName:                          buyLBalancingData
+
+        sellHBalancingDataName:                         sellHBalancingData
+        sellLBalancingDataName:                         sellLBalancingData
+
+    change:
+        indexColumn     :                           Day
+        quantityColumn  :                           Quantity
+
+
+CONVERSION:
+    common:
+        key             :                           FinalCommercialConversion
+
+    validate:
+        HLConversionCol:                           CommercialConversion_H-L
+        LHConversionCol:                           CommercialConversion_L-H
+
+        HLUnitColumn   :                           UnitCommercialConversion_H-L
+        LHUnitColumn   :                           UnitCommercialConversion_L-H
+
+        energyUnit     :                           KWh
+
+WEATHER:
+    common:
+        WEATHER_MONTHLY_SUFFIX:                     '_monthly'
+    automated:
+        indexColumn     :                           Date
+
+        variablesDaily  :                           {
+                                                    'TXK':'TMAX',
+                                                    'TNK':'TMIN',
+                                                    'SDK':'SUNSHINE_SUM',
+                                                    'STATIONS_ID':'Station',
+                                                    'Date':'Date'
+                                                    }
+
+        variablesMonthly:                           {
+                                                    'MO_TX':'TMAX',
+                                                    'MO_TN':'TMEAN',
+                                                    'MO_SD_S':'SUNSHINE_SUM',
+                                                    'STATIONS_ID':'Station',
+                                                    'Date':'Date'
+                                                    }
+
+        dateColumnMonthly:                          MESS_DATUM_BEGINN
+        dateColumnDaily  :                          MESS_DATUM
+
+
+    manual:
+
+        valueColumn      :                           Wert
+        productCode      :                           Produkt_Code 
+        stationId        :                           SDO_ID 
+        monthIdx         :                           Zeitstempel 
+
+        stationIdChanged :                           Station 
+        monthIdxChanged  :                           Month 
+
+        variablesReq     :                           {
+                                                     'MO_TX_MN004':'TMAX',
+                                                     'MO_TN_MN004':'TMEAN',
+                                                     'MO_SD_S_MN004':'SUNSHINE_SUM'
+                                                     }
+        
+COMMON:
+    ZERO_FLOAT          :                           0.0
+    DAILY_RESAMPLE      :                           'D'
+    MONTHLY_RESAMPLE    :                           'M'
+
+EXTENSIONS:
+    dataExt             :                           .data
+    modelExt            :                           .model
+    scalarExt           :                           .scalar
+    paramExt            :                           .param
+    csvExt              :                           .csv
